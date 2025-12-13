@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Extractor Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glob"></div>
+    <div class="container">
+        <header>
+            <h1>Phone Number Extractor</h1>
+            <p>Paste your data below to extract clean phone numbers instantly.</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <label for="inputData">Input Data</label>
+                <textarea id="inputData" placeholder="Paste text here (e.g. Location Coffee data)..."></textarea>
+            </div>
+
+            <div class="actions">
+                <button id="extractBtn" class="primary-btn">
+                    <span>Extract Numbers</span>
+                </button>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <label for="outputData">Extracted Numbers</label>
+                    <button id="copyBtn" class="secondary-btn" title="Copy to Clipboard">
+                        Copy All
+                    </button>
+                </div>
+                <textarea id="outputData" readonly placeholder="Results will appear here..."></textarea>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
